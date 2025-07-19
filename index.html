@@ -8,21 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         * {
             padding: 0%;
             margin: 0%;
-            box-sizing: border-box;
         }
         .container {
             width: 100%;
             height: 100%;
-            /* box-sizing: border-box; */
+            box-sizing: border-box;
         }
         
         /* ----header---- */
@@ -466,19 +460,28 @@
 
         /* -----Email----- */
         /* --------------- */
-       .email-lane{
+        .email-lane {
+
             width: 100%;
             height: 50px;
             background-color: rgb(230, 230, 230);
             line-height: 40px;
         }
-        .email-lane span{
-            padding: 0px 30px;
+
+        .email-lane span {
+            padding: 0px 80px;
         }
-        .email-lane a{
+
+        .email-lane a {
             text-decoration: none;
         }
-        .footer-lane-r{
+
+        /* --------------- */
+        /* -----Email----- */
+
+        /* -----Links-Lane----- */
+        /* -------------------- */
+        .region-lane {
             color: rgb(224, 233, 235);
             background-color: rgb(88, 88, 88);
             width: 100%;
@@ -487,11 +490,12 @@
             font-size: 18px;
             font-weight: 200;
         }
-        .footer-lane-r p{
-           padding-left: 80px;
+
+        .region-lane p {
+            padding-left: 80px;
         }
-        .footer-lane{
-            
+
+        .links-lane {
             background-color: rgb(88, 88, 88);
             width: 100%;
             height: 300px;
@@ -499,98 +503,125 @@
             display: flex;
         }
 
-        
-        .footer-lane-c{            
-           width: 20%;
+        .link-lane {
+            width: 20%;
             display: block;
             padding: 20px 0px 0px 80px;
             font-weight: 500;
-            
         }
-        .footer-lane-c h3{
+
+        .link-lane-hd {
             color: rgb(224, 233, 235);
             display: block;
             margin-bottom: 10px;
             align-self: center;
-            
+
         }
-        .footer-lane-c ul li{
+
+        .link-lane ul li {
             list-style: none;
 
         }
-        .footer-lane-c ul li a{
+
+        .link-lane ul li a {
             text-decoration: none;
             color: white;
         }
-        .footer-lane-c ul li a:hover{
+
+        .link-lane ul li a:hover {
             color: rgb(33, 66, 167);
         }
-        .footer-lane-c h4{            
-            margin: 20px 0px;
-            font-weight: 700;
+
+        .link-lane-hd {
+            color: rgb(224, 233, 235);
+            display: block;
+            margin-bottom: 10px;
+            align-self: center;
         }
-        .footer-lane-c i{
+
+        .link-lane i {
             color: white;
             margin-right: 15px;
             font-size: larger;
 
         }
-        .footer-lane-c h4{
+
+        .link-lane-hd h4 {
             margin: 20px 0px;
             font-weight: 700;
-            
+
         }
-        .footer-lane-c input{
-            padding: 8px 0px ;
+        .link-lane h4{
+            color: white;
+        }
+        .link-lane span i:hover{
+            color: rgb(0, 132, 224);
+        }
+        .link-lane input {
+            padding: 8px 0px;
             margin-bottom: 15px;
         }
-        .footer-lane-c button{
+
+        .link-lane button {
             color: white;
             border: 1px solid white;
             background: transparent;
             padding: 10px 25px;
         }
-        .footer-lane-c button:hover{
+
+        .link-lane button:hover {
             background-color: rgb(15, 19, 201);
             color: white;
             scale: 1.05;
             transition: 0.5s;
             cursor: pointer;
         }
-        .footer-a{
-             width: 100%;
+
+        /* -------------------- */
+        /* -----Links-Lane----- */
+
+
+        /* -----Footer----- */
+        /* ---------------- */
+        .footer-lane {
+            width: 100%;
             height: 100px;
             line-height: 15px;
             background-color: rgb(88, 88, 88);
             font-size: 17px;
             font-weight: 500;
-            
         }
-        .footer-a span{
+
+        .footer-lane span {
             padding: 0px 0px 0px 20px;
             display: flex;
             flex-direction: row;
 
-
         }
-        .footer-a a{
+
+        .footer-lane a {
             color: white;
             text-decoration: none;
-            padding: 20px 5px 0px 5px ;
+            padding: 20px 5px 0px 5px;
         }
-        .footer-a a:hover{
-            color: blue;
+
+        .footer-lane a:hover {
+            color: rgb(0, 132, 224);
         }
-        .vl{
+
+        .vl {
             border-left: 2px solid white;
             height: 20px;
             margin-top: 20px;
         }
+
+        /* -----Footer----- */
+        /* ---------------- */
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
 
         <!-- Header -->
         <!-- ------ -->
@@ -730,26 +761,39 @@
 
         <!----------Email--------->
         <!------------------------>
-       
-    <div class="email-lane"><span><sup>1</sup>SEE&nbsp;&nbsp;&nbsp;<a href="a">http://www8.hp.com/us/en/go/suppliesclaims.html</a></span></div>
-
-    <div class="footer-lane-r">
-        <p>Country/Region:<img style="width: 25px; height: 10px; padding: 0%; margin: 0%;" src="hp/24.svg" alt="PK Flag"> Pakistan</p>
-            </div><hr style="width: 100%; border-bottom: 2px solid white;">
-    <div class="footer-lane">
-        <div class="footer-lane-c" id="footer-lane1c">
-            <h3 class="footer-lane-c-hd">About us</h2>
-            <ul>
-                <li><a href="a">Contact HP</a></li>
-                <li><a href="a">Careers</a></li>
-                <li><a href="a">Investors RElations</a></li>
-                <li><a href="a">Sustainable Impect</a></li>
-                <li><a href="a">Press Center</a></li>
-                <li><a href="a">The Garage</a></li>
-            </ul>
+        <div class="email-lane">
+            <span><sup>1</sup>SEE&nbsp;&nbsp;&nbsp;<a
+                    href="a">http://www8.hp.com/us/en/go/suppliesclaims.html</a></span>
         </div>
-        <div class="footer-lane-c" id="footer-lane2c">
-            <h3 class="footer-lane-c-hd">Ways to buy</h3></h2>
+        <!------------------------>
+        <!----------Email--------->
+
+        <!--Region-->
+        <!---------->
+        <div class="region-lane">
+            <p>Country/Region:<img style="width: 25px; height: 10px; padding: 0%; margin: 0%;" src="hp/24.svg"
+                    alt="PK Flag"> Pakistan</p>
+        </div><hr style="width: 100%; border-bottom: 1px solid whitesmoker;">
+        <!---------->
+        <!--Region-->
+
+        <!--Link-Lane-->
+        <!------------->
+        <div class="links-lane">
+            <div class="link-lane" id="link-lane1">
+                <h3 class="link-lane-hd">About us</h2>
+                    <ul>
+                        <li><a href="a">Contact HP</a></li>
+                        <li><a href="a">Careers</a></li>
+                        <li><a href="a">Investors RElations</a></li>
+                        <li><a href="a">Sustainable Impect</a></li>
+                        <li><a href="a">Press Center</a></li>
+                        <li><a href="a">The Garage</a></li>
+                    </ul>
+            </div>
+            <div class="link-lane" id="link-lane2">
+                <h3 class="link-lane-hd">Ways to buy</h3>
+                </h2>
                 <ul>
                     <li><a href="a">Shop online</a></li>
                     <li><a href="a">shop Locator</a></li>
@@ -758,57 +802,71 @@
                     <li><a href="a">Enterprise store</a></li>
                     <li><a href="a">public Sector Purchasing</a></li>
                 </ul>
+            </div>
+            <div class="link-lane" id="link-lane3">
+                <h3 class="link-lane-hd">Support</h2>
+                    <ul>
+                        <li><a href="a">Download Drivers</a></li>
+                        <li><a href="a">Support & troubleshooting</a></li>
+                        <li><a href="a">Forums</a></li>
+                        <li><a href="a">Register your Product</a></li>
+                        <li><a href="a">Authorized service providers</a></li>
+                        <li><a href="a">Check repair status</a></li>
+                        <li><a href="a">Training & certifiaction</a></li>
+                        <li><a href="a">Fraud alert</a></li>
+                    </ul>
+            </div>
+            <div class="link-lane" id="link-lane4">
+                <h3 class="link-lane-hd">HP Printers</h2>
+                    <ul>
+                        <li><a href="a">Contact HP</a></li>
+                        <li><a href="a">Careers</a></li>
+                        <li><a href="a">Investors RElations</a></li>
+                        <li><a href="a">Sustainable Impect</a></li>
+                        <li><a href="a">Press Center</a></li>
+                        <li><a href="a">The Garage</a></li>
+                    </ul>
+            </div>
+            <div class="link-lane" id="link-lane5">
+                <h3 class="link-lane-hd">Stay connected</h3>
+                <span><a title="facebook" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a title="Linked in" href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a title="Twitter" href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a title="Youtube" href=""><i class="fa-brands fa-square-youtube"></i></a>
+                    <h4>sign up for news & offers</h4>
+                    <input type="email" id="email" placeholder="Email address">
+                    <button>Submit</button>
+            </div>
+        </div><hr style="width: 100%; border-bottom: 2px solid rgb(88, 88, 88); padding: 0px;">
+        <!------------->
+        <!--Link-Lane-->
+
+        <!---Footer--->
+        <!------------>
+        <div class="footer-lane">
+            <span>
+                <a href="">Recalls</a>
+                <div class="vl"></div>
+                <a href="">Product Recycling</a>
+                <div class="vl"></div>
+                <a href="">Accessibility</a>
+                <div class="vl"></div>
+                <a href="">CA Supply Chains Act</a>
+                <div class="vl"></div>
+                <a href="">Site Map</a>
+                <div class="vl"></div>
+                <a href="">Privacy</a>
+                <div class="vl"></div>
+                <a href="">Cookies & ad choice</a>
+                <div class="vl"></div>
+                <a href="">Terms of use</a>
+                <div class="vl"></div>
+                <a href="">Limited Arranty Statment</a>
+                <div class="vl"></div>
+                <a href="">Terms & conditions of sales & services</a>
+                <div class="vl"></div>
+            </span>
         </div>
-        <div class="footer-lane-c" id="footer-lane3c">
-            <h3 class="footer-lane-c-hd">Support</h2>
-                <ul>
-                    <li><a href="a">Download Drivers</a></li>
-                    <li><a href="a">Support & troubleshooting</a></li>
-                    <li><a href="a">Forums</a></li>
-                    <li><a href="a">Register your Product</a></li>
-                    <li><a href="a">Authorized service providers</a></li>
-                    <li><a href="a">Check repair status</a></li>
-                    <li><a href="a">Training & certifiaction</a></li>
-                    <li><a href="a">Fraud alert</a></li>
-                </ul>
-        </div>
-        <div class="footer-lane-c" id="footer-lane4c">
-            <h3 class="footer-lane-c-hd">HP Printers</h2>
-                <ul>
-                    <li><a href="a">Contact HP</a></li>
-                    <li><a href="a">Careers</a></li>
-                    <li><a href="a">Investors RElations</a></li>
-                    <li><a href="a">Sustainable Impect</a></li>
-                    <li><a href="a">Press Center</a></li>
-                    <li><a href="a">The Garage</a></li>
-                </ul>
-        </div>
-        <div class="footer-lane-c" id="footer-lane5c">
-            <h3>Stay connected</h3>
-            <span><a title="facebook" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a title="Linked in" href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a title="Twitter" href=""><i class="fa-brands fa-square-twitter"></i></a>
-            <a title="Youtube" href=""><i class="fa-brands fa-square-youtube"></i></a>
-            <h4>sign up for news & offers</h4>
-            <input type="email" id="email" placeholder="Email address">
-            <button>Submit</button>
-        </div>
-    </div><hr style="width: 100%; border-bottom: 2px solid rgb(88, 88, 88); padding: 0px;">
-    <div class="footer-a"><span class="footer-a">
-        
-        <a href="">Recalls</a><div class="vl"></div>
-        <a href="">Product Recycling</a><div class="vl"></div>
-        <a href="">Accessibility</a><div class="vl"></div>
-        <a href="">CA Supply Chains Act</a><div class="vl"></div>
-        <a href="">Site Map</a><div class="vl"></div>
-        <a href="">Privacy</a><div class="vl"></div>
-        <a href="">Cookies & ad choice</a><div class="vl"></div>
-        <a href="">Terms of use</a><div class="vl"></div>
-        <a href="">Limited Arranty Statment</a><div class="vl"></div>
-        <a href="">Terms & conditions of sales & services</a><div class="vl"></div>
-    </span>
-        
-    </div>
         <!---Footer--->
         <!--------------->
 
